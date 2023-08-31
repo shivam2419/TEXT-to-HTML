@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock title %}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+      .logo {
+        display: flex;
+        justify-content: space-around;
+      }
+      .logo h3 {
+        margin-top: 6px;
+        font-family: arial;
+        font-weight: 600;
+        font-size: 30px;
+      }
+      select {
+        margin-top: 8px;
+        height: 30px;
+        border: none;
+        margin-left: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://media.istockphoto.com/id/1024061294/vector/gear-icon-outline-icon-business-services-technical-help-gear-configuration-support-center.jpg?s=612x612&w=0&k=20&c=LAN71bq9_lOv3KlpvrbWPHdFIzPHW7VO3brbM_RN_4g="
+          alt=""
+          height="50"
+          width="50"
+        />
+        <h3>ConverterGuru</h3>
+      </div>
+      <select name="" id="">
+        <option value="" selected>Converters</option>
+        <option value="unitc">Unit Converter</option>
+        <option value="">
+          <a href="currency_convertion">Currency Converter</a>
+        </option>
+        <option value="casec">Case Converter</option>
+      </select>
+    </nav>
+    {% block body %} {% endblock body %}
+    <footer></footer>
+  </body>
+</html>
